@@ -4,6 +4,7 @@ local options = {
     relativenumber = false,
     ruler = false,
     shiftwidth = 4,
+    winbar = "",
     tabstop = 4,
     softtabstop = 4,
     smartindent = true,

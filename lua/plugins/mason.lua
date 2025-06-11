@@ -1,6 +1,6 @@
 return {
     "mason-org/mason.nvim",
     lazy = true,
-    event = "VeryLazy",
+    cmd = { "Mason", "MasonInstall", "MasonUpdate" },
     opts = {},
 }

@@ -1,6 +1,7 @@
 return {
     "rebelot/kanagawa.nvim",
     branch = "master",
+    priority = 1000,
     config = function()
         require("kanagawa").setup({
             transparent = true,
@@ -16,6 +17,9 @@ return {
                 }
             end,
         })
-        vim.cmd("colorscheme kanagawa")
+        --vim.cmd("colorscheme kanagawa")
+        vim.defer_fn(function()
+            vim.cmd("colorscheme kanagawa")
+        end, 50)
     end,
 }
