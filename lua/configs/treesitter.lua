@@ -10,5 +10,5 @@ return {
         "json",
     },
     highlight = { enable = true },
-    auto_install = true,
+    --    auto_install = true,
 }
